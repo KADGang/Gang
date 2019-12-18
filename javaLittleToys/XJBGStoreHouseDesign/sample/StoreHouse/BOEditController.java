@@ -130,7 +130,7 @@ public class BOEditController {
             return false;
         }else{
             for (BasicObject key: BObList){
-                if (key.getIdentifier().equals(idField.getText())){
+                if (!(key.getIdentifier().equals(BOb.getIdentifier())) && key.getIdentifier().equals(idField.getText())){
                     return false;
                 }
             }
